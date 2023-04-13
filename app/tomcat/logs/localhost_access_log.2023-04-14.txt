@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:00:00:01 +0800] "GET /backend/getUser?phone_number=81234567 HTTP/1.1" 200 59
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:00:00:39 +0800] "GET /backend/getUser?phone_number=81234561 HTTP/1.1" 200 2
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:00:00:43 +0800] "GET /backend/getUser?phone_number=81234562 HTTP/1.1" 200 2
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:00:50:03 +0800] "GET /backend/createUser?student_name=%27noel%27&phone_number=%2787654321%27&student_age=19&password=%27qwerty%27 HTTP/1.1" 200 137
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:00:53:59 +0800] "GET /backend/createUser?student_name=%27noel%27&phone_number=%2787654321%27&student_age=19&password=%27qwerty%27 HTTP/1.1" 200 235
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:00:54:24 +0800] "GET /backend/createUser?student_name=%27noel%27&phone_number=%2787654321%27&student_age=19&student_password=%27qwerty%27 HTTP/1.1" 200 239
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:00:57:03 +0800] "GET /backend/createUser?student_name=noel&phone_number=87654321&student_age=19&student_password=qwerty HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:00:57:18 +0800] "GET /backend/getUser HTTP/1.1" 200 2
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:01:04:02 +0800] "GET /backend/updateUser?student_name=noel&phone_number=87654321&student_age=20&student_password=qwerty&student_id=3 HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:01:04:16 +0800] "GET /backend/updateUser?student_name=noel&phone_number=87654321&student_age=20&student_password=qwertyabc&student_id=3 HTTP/1.1" 200 -
