@@ -7,12 +7,6 @@ import java.sql.Statement;
  
 public class JdbcSelectTest {   // Save as "JdbcSelectTest.java"
    public static void main(String[] args) {
-        try {
-            Class.forName("com.mysql.cj.jdbc");
-            System.out.println("AH");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
       try (
          // Step 1: Construct a database 'Connection' object called 'conn'
          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/SQUIRREL?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC", "myuser", "xxxx");
@@ -37,10 +31,12 @@ public class JdbcSelectTest {   // Save as "JdbcSelectTest.java"
          // rset.next() inside the whole-loop repeatedly moves the cursor to the next row.
          // It returns false if no more rows.
          while(rset.next()) {   // Repeatedly process each row
-            String student_name = rset.getString("student_name");  // retrieve a 'String'-cell in the row
+            int student_id = rset.getInt("student_id");  // retrieve a 'String'-cell in the row
+            String student_name = rset.getString("student_name"); 
+            String phone_number = rset.getString("phone_number"); 
             // double price = rset.getDouble("price");  // retrieve a 'double'-cell in the row
             // int    qty   = rset.getInt("qty");       // retrieve a 'int'-cell in the row
-            System.out.println(student_name);
+            System.out.println(student_id+" "+student_name+" "+phone_number);
             ++rowCount;
          }
          System.out.println("Total number of records = " + rowCount);
