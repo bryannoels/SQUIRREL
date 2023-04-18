@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.squirrel'
+    namespace 'com.example.squirrelmanual'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.squirrel"
+        applicationId "com.example.squirrelmanual"
         minSdk 24
         targetSdk 33
         versionCode 1
