@@ -1198,3 +1198,10 @@
 14-Apr-2023 18:26:45.295 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macintosh/Desktop/Y2S2/IM2073/SQUIRREL/app/tomcat/webapps/host-manager] has finished in [415] ms
 14-Apr-2023 18:26:45.297 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
 14-Apr-2023 18:26:45.311 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2936] milliseconds
+14-Apr-2023 18:34:56.133 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/backend] has started
+14-Apr-2023 18:34:56.525 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2023 18:34:56.528 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/backend] is completed
+14-Apr-2023 18:37:08.326 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+14-Apr-2023 18:37:08.331 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+14-Apr-2023 18:37:08.361 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+14-Apr-2023 18:37:08.370 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
