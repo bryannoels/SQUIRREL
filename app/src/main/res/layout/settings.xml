@@ -11,7 +11,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="406dp"
         android:layout_height="736dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,78 +21,69 @@
         app:layout_constraintVertical_bias="0.182">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText3"
+            android:id="@+id/editName"
             android:layout_width="332dp"
             android:layout_height="53dp"
-            android:layout_marginTop="116dp"
-            android:hint="your name"
+            android:layout_marginTop="136dp"
+            android:hint="name"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:visibility="visible"
-            app:layout_constraintEnd_toEndOf="@+id/editText"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/editText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:visibility="visible" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText2"
+            android:id="@+id/editPhoneNumber"
             android:layout_width="332dp"
             android:layout_height="53dp"
-            android:layout_marginBottom="52dp"
-            android:hint="Password"
+            android:hint="phone number"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/editText5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="323dp"
             tools:visibility="visible" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText"
+            android:id="@+id/editAge"
             android:layout_width="332dp"
             android:layout_height="53dp"
-            android:hint="1-100"
+            android:hint="age"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/editText2"
-            app:layout_constraintEnd_toEndOf="@+id/editText2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/editText2"
-            app:layout_constraintTop_toBottomOf="@+id/editText3"
-            app:layout_constraintVertical_bias="0.417"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="229dp"
             tools:visibility="visible" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText5"
+            android:id="@+id/editPassword"
             android:layout_width="332dp"
             android:layout_height="53dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginBottom="132dp"
-            android:hint="1-100"
+            android:hint="password"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/button10"
-            app:layout_constraintEnd_toEndOf="@+id/editText2"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/editText2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="420dp"
             tools:visibility="visible" />
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/updateButton"
             android:layout_width="289dp"
             android:layout_height="58dp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginBottom="140dp"
             android:background="@drawable/rect"
-            android:text="Next"
+            android:text="UPDATE"
             android:textColor="#FED2B3"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/editText5"
-            app:layout_constraintHorizontal_bias="0.426"
-            app:layout_constraintStart_toStartOf="@+id/editText5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
             tools:layout_constraintTop_toBottomOf="@id/textInputLayout2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -107,21 +98,21 @@
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/learnButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
             android:text="Learn"
             android:textColor="#FFD3B4"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            app:layout_constraintEnd_toStartOf="@+id/profileButton"
             app:layout_constraintHorizontal_bias="0.004"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.818" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/profileButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="60dp"

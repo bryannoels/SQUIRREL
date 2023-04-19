@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView firstButton = findViewById(R.id.imageView10);
         ImageView secondButton = findViewById(R.id.imageView11);
         ImageView thirdButton = findViewById(R.id.imageView12);
+        TextView profileButton = findViewById(R.id.profileButton);
         firstButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -26,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
         secondButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,13 +36,19 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
         thirdButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Do something when the image is clicked
                 Intent intent = new Intent(MainActivity.this, LearningPage.class);
+                startActivity(intent);
+            }
+        });
+        profileButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Do something when the image is clicked
+                Intent intent = new Intent(MainActivity.this, Settings.class);
                 startActivity(intent);
             }
         });

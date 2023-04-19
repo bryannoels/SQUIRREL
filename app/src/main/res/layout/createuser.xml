@@ -44,7 +44,7 @@
         app:srcCompat="@drawable/img_10" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/nextButton"
         android:layout_width="105dp"
         android:layout_height="51dp"
         android:layout_marginBottom="28dp"
@@ -58,9 +58,10 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView22" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/backButton"
         android:layout_width="105dp"
         android:layout_height="51dp"
+        android:layout_marginStart="40dp"
         android:layout_marginBottom="28dp"
         android:background="@drawable/rect"
         android:shadowColor="#F7CCAE"

@@ -35,7 +35,7 @@
         app:srcCompat="@drawable/img_12" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/registerButton"
         android:layout_width="132dp"
         android:layout_height="53dp"
         android:layout_marginBottom="44dp"
@@ -50,17 +50,16 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/loginButton"
         android:layout_width="148dp"
         android:layout_height="56dp"
+        android:layout_marginEnd="36dp"
         android:layout_marginBottom="40dp"
         android:background="@drawable/rect"
         android:backgroundTint="#FED2B3"
         android:text="Login"
         android:textColor="#72412B"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.586"
-        app:layout_constraintStart_toEndOf="@+id/button5" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
