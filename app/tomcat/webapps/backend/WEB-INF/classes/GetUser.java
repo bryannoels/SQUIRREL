@@ -24,13 +24,16 @@ public class GetUser extends HttpServlet {
                "myuser", "xxxx");
          Statement stmt = conn.createStatement();
       ) {
-        String sqlStr = "select phone_number, student_password from students where phone_number = " + "'" + request.getParameter("phone_number") + "'"; 
+        String sqlStr = "select student_id, student_name, phone_number, student_age, student_password from students where phone_number = " + "'" + request.getParameter("phone_number") + "'"; 
          ResultSet rset = stmt.executeQuery(sqlStr);
 
          JSONArray jsonArr = new JSONArray();
          while(rset.next()) {
             JSONObject jsonObj = new JSONObject();
+            jsonObj.put("student_id", rset.getInt("student_id"));
+            jsonObj.put("student_name", rset.getString("student_name"));
             jsonObj.put("phone_number", rset.getString("phone_number"));
+            jsonObj.put("student_age", rset.getInt("student_age"));
             jsonObj.put("student_password", rset.getString("student_password"));
             jsonArr.put(jsonObj);
          }

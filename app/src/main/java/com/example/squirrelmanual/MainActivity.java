@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -38,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
 
         // call the AsyncTask to fetch API
         new GetModuleList().execute();
+
+        ProgressBar progressBar = findViewById(R.id.progressBar3);
+        progressBar.setProgress(30, true);
 
         ImageView firstButton = findViewById(R.id.imageView10);
         ImageView secondButton = findViewById(R.id.imageView11);

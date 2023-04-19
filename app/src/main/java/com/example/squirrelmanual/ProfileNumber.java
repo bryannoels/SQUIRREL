@@ -26,7 +26,7 @@ public class ProfileNumber extends AppCompatActivity  {
             }
             else
             {
-                Intent intent = new Intent(ProfileNumber.this, ProfileNumber.class);
+                Intent intent = new Intent(ProfileNumber.this, Login.class);
                 startActivity(intent);
             }
         });

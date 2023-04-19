@@ -3,9 +3,11 @@ package com.example.squirrelmanual;
 import android.app.Application;
 
 public class SQUIRREL extends Application {
-    private String name = "ABC";
+    private String name = "Bryan";
     private int age = 19;
-    private String phone = "12345678";
+    private String phone = "81234567";
+    private String password = "password";
+    private int studentId = 1;
 
     public String getName() {
         return name;
@@ -26,6 +28,20 @@ public class SQUIRREL extends Application {
     }
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public int getStudentId() {
+        return studentId;
+    }
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
     }
 
 }

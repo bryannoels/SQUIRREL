@@ -26,7 +26,7 @@ public class ProfileAge extends AppCompatActivity  {
             }
             else
             {
-                Intent intent = new Intent(ProfileAge.this, ProfileAge.class);
+                Intent intent = new Intent(ProfileAge.this, Login.class);
                 startActivity(intent);
             }
         });
