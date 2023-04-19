@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     android:background="#72412B"
     tools:context=".MainActivity">
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/textView"
@@ -109,7 +113,7 @@
             app:srcCompat="@drawable/img_2" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="4dp"
@@ -145,7 +149,7 @@
             app:srcCompat="@drawable/img_1" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/textViewB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
@@ -181,7 +185,7 @@
             app:srcCompat="@drawable/img_2" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/textViewC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="IE3017 Computer Com..."
@@ -200,16 +204,16 @@
             android:layout_width="254dp"
             android:layout_height="29dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="4dp"
             android:background="#72412B"
-            app:layout_constraintEnd_toEndOf="@+id/imageView7"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+            app:layout_constraintEnd_toEndOf="@+id/textViewA"
+            app:layout_constraintTop_toBottomOf="@+id/textViewA" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="405dp"
+        android:layout_height="67dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -54,3 +54,55 @@
 19-Apr-2023 17:30:37.055 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 19-Apr-2023 17:30:37.194 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
 19-Apr-2023 17:30:37.215 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+19-Apr-2023 22:05:17.196 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.7
+19-Apr-2023 22:05:17.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 27 2023 20:25:27 UTC
+19-Apr-2023 22:05:17.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.7.0
+19-Apr-2023 22:05:17.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+19-Apr-2023 22:05:17.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.2.1
+19-Apr-2023 22:05:17.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+19-Apr-2023 22:05:17.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home
+19-Apr-2023 22:05:17.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           20+36-2344
+19-Apr-2023 22:05:17.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+19-Apr-2023 22:05:17.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/macintosh/Desktop/Y2S2/IM2073/SQUIRREL/app/tomcat
+19-Apr-2023 22:05:17.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/macintosh/Desktop/Y2S2/IM2073/SQUIRREL/app/tomcat
+19-Apr-2023 22:05:17.266 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/macintosh/Desktop/Y2S2/im2073/SQUIRREL/app/tomcat/conf/logging.properties
+19-Apr-2023 22:05:17.266 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Apr-2023 22:05:17.266 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-Apr-2023 22:05:17.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Apr-2023 22:05:17.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+19-Apr-2023 22:05:17.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Apr-2023 22:05:17.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Apr-2023 22:05:17.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-Apr-2023 22:05:17.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-Apr-2023 22:05:17.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Apr-2023 22:05:17.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/macintosh/Desktop/Y2S2/im2073/SQUIRREL/app/tomcat
+19-Apr-2023 22:05:17.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/macintosh/Desktop/Y2S2/im2073/SQUIRREL/app/tomcat
+19-Apr-2023 22:05:17.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/macintosh/Desktop/Y2S2/im2073/SQUIRREL/app/tomcat/temp
+19-Apr-2023 22:05:17.282 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/macintosh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+19-Apr-2023 22:05:17.654 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+19-Apr-2023 22:05:17.710 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [774] milliseconds
+19-Apr-2023 22:05:17.755 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Apr-2023 22:05:17.756 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.7]
+19-Apr-2023 22:05:17.766 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macintosh/Desktop/Y2S2/IM2073/SQUIRREL/app/tomcat/webapps/test]
+19-Apr-2023 22:05:18.433 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Apr-2023 22:05:18.473 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macintosh/Desktop/Y2S2/IM2073/SQUIRREL/app/tomcat/webapps/test] has finished in [706] ms
+19-Apr-2023 22:05:18.474 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macintosh/Desktop/Y2S2/IM2073/SQUIRREL/app/tomcat/webapps/backend]
+19-Apr-2023 22:05:18.856 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Apr-2023 22:05:18.860 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macintosh/Desktop/Y2S2/IM2073/SQUIRREL/app/tomcat/webapps/backend] has finished in [385] ms
+19-Apr-2023 22:05:18.861 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macintosh/Desktop/Y2S2/IM2073/SQUIRREL/app/tomcat/webapps/docs]
+19-Apr-2023 22:05:19.200 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Apr-2023 22:05:19.202 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macintosh/Desktop/Y2S2/IM2073/SQUIRREL/app/tomcat/webapps/docs] has finished in [341] ms
+19-Apr-2023 22:05:19.202 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macintosh/Desktop/Y2S2/IM2073/SQUIRREL/app/tomcat/webapps/manager]
+19-Apr-2023 22:05:19.514 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Apr-2023 22:05:19.520 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macintosh/Desktop/Y2S2/IM2073/SQUIRREL/app/tomcat/webapps/manager] has finished in [318] ms
+19-Apr-2023 22:05:19.520 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macintosh/Desktop/Y2S2/IM2073/SQUIRREL/app/tomcat/webapps/examples]
+19-Apr-2023 22:05:19.992 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Apr-2023 22:05:20.010 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macintosh/Desktop/Y2S2/IM2073/SQUIRREL/app/tomcat/webapps/examples] has finished in [490] ms
+19-Apr-2023 22:05:20.010 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macintosh/Desktop/Y2S2/IM2073/SQUIRREL/app/tomcat/webapps/ROOT]
+19-Apr-2023 22:05:20.360 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Apr-2023 22:05:20.362 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macintosh/Desktop/Y2S2/IM2073/SQUIRREL/app/tomcat/webapps/ROOT] has finished in [352] ms
+19-Apr-2023 22:05:20.362 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macintosh/Desktop/Y2S2/IM2073/SQUIRREL/app/tomcat/webapps/host-manager]
+19-Apr-2023 22:05:20.842 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Apr-2023 22:05:20.845 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macintosh/Desktop/Y2S2/IM2073/SQUIRREL/app/tomcat/webapps/host-manager] has finished in [483] ms
+19-Apr-2023 22:05:20.848 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+19-Apr-2023 22:05:20.875 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3163] milliseconds
