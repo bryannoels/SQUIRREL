@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFD3B4"
-   >
+    android:background="#FFD3B4">
 
     <TextView
         android:id="@+id/textView17"
@@ -71,7 +70,7 @@
             android:layout_width="158dp"
             android:layout_height="81dp"
             android:background="@drawable/rect"
-            android:backgroundTint="#99CC29"
+            android:backgroundTint="#FF3636"
             android:text="Next"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -104,7 +103,7 @@
         android:id="@+id/constraintLayout4"
         android:layout_width="409dp"
         android:layout_height="168dp"
-        android:background="@drawable/greenback"
+        android:background="@drawable/redback"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -117,7 +116,7 @@
             android:layout_marginStart="36dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/rect"
-            android:backgroundTint="#99CC29"
+            android:backgroundTint="#FF3636"
             android:text="Next Question"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -130,11 +129,11 @@
 
         <TextView
             android:id="@+id/textView10"
-            android:layout_width="117dp"
-            android:layout_height="34dp"
+            android:layout_width="272dp"
+            android:layout_height="29dp"
             android:layout_marginTop="16dp"
-            android:text="Amazing!"
-            android:textColor="#98CB29"
+            android:text="Upss! ,that's wrong "
+            android:textColor="#FE3636"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/button2"
@@ -150,7 +149,7 @@
             android:layout_height="34dp"
             android:layout_marginTop="16dp"
             android:text="Answer : next"
-            android:textColor="#98CB29"
+            android:textColor="#FE3636"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/button2"
