@@ -1,7 +1,9 @@
 package com.example.squirrelmanual;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 public class ResultPage extends AppCompatActivity  {
 
@@ -9,5 +11,11 @@ public class ResultPage extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.resultpage);
+
+        Button continueButton = findViewById(R.id.continueButton);
+        continueButton.setOnClickListener(v -> {
+            Intent intent = new Intent( ResultPage.this, LearningPage.class);
+            startActivity(intent);
+        });
     }
 }

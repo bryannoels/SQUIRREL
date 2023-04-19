@@ -110,7 +110,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/nextButton"
             android:layout_width="338dp"
             android:layout_height="49dp"
             android:layout_marginStart="36dp"
@@ -136,10 +136,10 @@
             android:textColor="#FE3636"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/button2"
-            app:layout_constraintEnd_toEndOf="@+id/button2"
+            app:layout_constraintBottom_toTopOf="@+id/nextButton"
+            app:layout_constraintEnd_toEndOf="@+id/nextButton"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="@+id/nextButton"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.309" />
 
@@ -152,10 +152,10 @@
             android:textColor="#FE3636"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/button2"
-            app:layout_constraintEnd_toEndOf="@+id/button2"
+            app:layout_constraintBottom_toTopOf="@+id/nextButton"
+            app:layout_constraintEnd_toEndOf="@+id/nextButton"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="@+id/nextButton"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.927" />
     </androidx.constraintlayout.widget.ConstraintLayout>

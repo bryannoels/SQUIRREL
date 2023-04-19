@@ -11,7 +11,7 @@
         android:id="@+id/textView17"
         android:layout_width="303dp"
         android:layout_height="114dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="70dp"
         android:layout_weight="1"
         android:text="What is the keyword to define an inherited subclass in Java OOP?"
         android:textSize="25sp"
@@ -27,14 +27,13 @@
         android:layout_width="418dp"
         android:layout_height="219dp"
         android:layout_marginTop="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/buttonA"
             android:layout_width="158dp"
             android:layout_height="81dp"
             android:layout_marginStart="32dp"
@@ -43,15 +42,15 @@
             android:background="@drawable/rect"
             android:text="Next"
             android:textColor="#FED2B3"
-            app:layout_constraintBottom_toTopOf="@+id/button7"
-            app:layout_constraintLeft_toRightOf="@id/button7"
+            app:layout_constraintBottom_toTopOf="@+id/buttonC"
+            app:layout_constraintLeft_toRightOf="@id/buttonC"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
             tools:layout_constraintTop_toBottomOf="@id/textInputLayout2" />
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/buttonC"
             android:layout_width="158dp"
             android:layout_height="81dp"
             android:layout_marginEnd="24dp"
@@ -59,23 +58,22 @@
             android:text="Next"
             android:textColor="#FED2B3"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button8"
+            app:layout_constraintEnd_toStartOf="@+id/buttonD"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/button3"
+            app:layout_constraintStart_toStartOf="@+id/buttonA"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.811"
             tools:layout_constraintTop_toBottomOf="@id/textInputLayout2" />
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/buttonD"
             android:layout_width="158dp"
             android:layout_height="81dp"
             android:background="@drawable/rect"
-            android:backgroundTint="#99CC29"
             android:text="Next"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/button6"
+            app:layout_constraintEnd_toEndOf="@+id/buttonB"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -83,82 +81,21 @@
             tools:layout_constraintTop_toBottomOf="@id/textInputLayout2" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/buttonB"
             android:layout_width="158dp"
             android:layout_height="81dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/rect"
             android:text="Next"
             android:textColor="#FED2B3"
-            app:layout_constraintBottom_toTopOf="@+id/button8"
+            app:layout_constraintBottom_toTopOf="@+id/buttonD"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.424"
-            app:layout_constraintStart_toEndOf="@+id/button3"
+            app:layout_constraintStart_toEndOf="@+id/buttonA"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
             tools:layout_constraintTop_toBottomOf="@id/textInputLayout2" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout4"
-        android:layout_width="413dp"
-        android:layout_height="193dp"
-        android:background="@drawable/greenback"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
-
-        <Button
-            android:id="@+id/nextButton"
-            android:layout_width="338dp"
-            android:layout_height="49dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/rect"
-            android:backgroundTint="#99CC29"
-            android:text="Next Question"
-            android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.865"
-            tools:layout_constraintTop_toBottomOf="@id/textInputLayout2" />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="117dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="16dp"
-            android:text="Amazing!"
-            android:textColor="#98CB29"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/nextButton"
-            app:layout_constraintEnd_toEndOf="@+id/nextButton"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/nextButton"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.309" />
-
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="117dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="16dp"
-            android:text="Answer : next"
-            android:textColor="#98CB29"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/nextButton"
-            app:layout_constraintEnd_toEndOf="@+id/nextButton"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/nextButton"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.927" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <SeekBar

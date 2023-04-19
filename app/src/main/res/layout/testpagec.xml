@@ -27,7 +27,6 @@
         android:layout_width="418dp"
         android:layout_height="219dp"
         android:layout_marginTop="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,7 +70,6 @@
             android:layout_width="158dp"
             android:layout_height="81dp"
             android:background="@drawable/rect"
-            android:backgroundTint="#99CC29"
             android:text="Next"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -98,67 +96,6 @@
             app:layout_constraintVertical_bias="0.0"
             tools:layout_constraintTop_toBottomOf="@id/textInputLayout2" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout4"
-        android:layout_width="409dp"
-        android:layout_height="168dp"
-        android:background="@drawable/greenback"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="338dp"
-            android:layout_height="49dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/rect"
-            android:backgroundTint="#99CC29"
-            android:text="Next Question"
-            android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.865"
-            tools:layout_constraintTop_toBottomOf="@id/textInputLayout2" />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="117dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="16dp"
-            android:text="Amazing!"
-            android:textColor="#98CB29"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/button2"
-            app:layout_constraintEnd_toEndOf="@+id/button2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/button2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.309" />
-
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="117dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="16dp"
-            android:text="Answer : next"
-            android:textColor="#98CB29"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/button2"
-            app:layout_constraintEnd_toEndOf="@+id/button2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/button2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.927" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <SeekBar
