@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
     private JSONArray moduleList;
     private JSONArray currentProgress;
+    private String firstModule;
+    private String secondModule;
+    private String thirdModule;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Do something when the image is clicked
                 Intent intent = new Intent(MainActivity.this, LearningPage.class);
+                myApp.setModuleId(1);
+                myApp.setModuleName(firstModule);
                 startActivity(intent);
             }
         });
@@ -63,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Do something when the image is clicked
                 Intent intent = new Intent(MainActivity.this, LearningPage.class);
+                myApp.setModuleId(2);
+                myApp.setModuleName(secondModule);
                 startActivity(intent);
             }
         });
@@ -71,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Do something when the image is clicked
                 Intent intent = new Intent(MainActivity.this, LearningPage.class);
+                myApp.setModuleId(3);
+                myApp.setModuleName(thirdModule);
                 startActivity(intent);
             }
         });
@@ -139,10 +148,13 @@ public class MainActivity extends AppCompatActivity {
                 else
                 {
                     String moduleNameA = moduleList.getJSONObject(0).getString("module_name");
+                    firstModule = moduleNameA;
                     textViewA.setText(moduleNameA.substring(0, Math.min(moduleNameA.length(), 20)) + "...");
                     String moduleNameB = moduleList.getJSONObject(1).getString("module_name");
+                    secondModule = moduleNameB;
                     textViewB.setText(moduleNameB.substring(0, Math.min(moduleNameB.length(), 20)) + "...");
                     String moduleNameC = moduleList.getJSONObject(2).getString("module_name");
+                    thirdModule = moduleNameC;
                     textViewC.setText(moduleNameC.substring(0, Math.min(moduleNameC.length(), 20)) + "...");
                 }
 

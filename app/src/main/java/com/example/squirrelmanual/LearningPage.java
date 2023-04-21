@@ -29,11 +29,15 @@ public class LearningPage extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.learningpage);
 
+
+
         SQUIRREL myApp = (SQUIRREL) getApplicationContext();
         int moduleId = myApp.getModuleId();
         int studentId = myApp.getStudentId();
 
-        System.out.println(moduleId);
+        TextView title = findViewById(R.id.textView11);
+        String moduleName = myApp.getModuleName();
+        title.setText(moduleName);
 
         new GetTopicList(moduleId).execute();
         new GetResultForLearningPage(studentId, moduleId, 1).execute();
@@ -46,6 +50,8 @@ public class LearningPage extends AppCompatActivity  {
             public void onClick(View v) {
                 // Do something when the image is clicked
                 Intent intent = new Intent(LearningPage.this, TestPage.class);
+                myApp.setQuestionNumber(1);
+                myApp.setLevelNumber(1);
                 startActivity(intent);
             }
         });
@@ -55,6 +61,8 @@ public class LearningPage extends AppCompatActivity  {
             public void onClick(View v) {
                 // Do something when the image is clicked
                 Intent intent = new Intent(LearningPage.this, TestPage.class);
+                myApp.setQuestionNumber(1);
+                myApp.setLevelNumber(2);
                 startActivity(intent);
             }
         });
@@ -64,6 +72,8 @@ public class LearningPage extends AppCompatActivity  {
             public void onClick(View v) {
                 // Do something when the image is clicked
                 Intent intent = new Intent(LearningPage.this, TestPage.class);
+                myApp.setQuestionNumber(1);
+                myApp.setLevelNumber(3);
                 startActivity(intent);
             }
         });

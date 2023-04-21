@@ -9,6 +9,10 @@ public class SQUIRREL extends Application {
     private String password = "password";
     private int studentId = 1;
     private int moduleId = 1;
+    private String moduleName = "Object Oriented Programming";
+    private int levelNumber = 1;
+    private int questionNumber = 1;
+    private int currentAnswer = 1;
     public static String baseURL = "http://192.168.10.137:9999/backend";
 
     public String getName() {
@@ -51,6 +55,34 @@ public class SQUIRREL extends Application {
     }
     public void setModuleId(int moduleId) {
         this.moduleId = moduleId;
+    }
+
+    public String getModuleName() {
+        return moduleName;
+    }
+    public void setModuleName(String moduleName) {
+        this.moduleName = moduleName;
+    }
+
+    public int getQuestionNumber() {
+        return questionNumber;
+    }
+    public void setQuestionNumber(int questionNumber) {
+        this.questionNumber = questionNumber;
+    }
+
+    public int getLevelNumber() {
+        return levelNumber;
+    }
+    public void setLevelNumber(int levelNumber) {
+        this.levelNumber = levelNumber;
+    }
+
+    public int getCurrentAnswer() {
+        return currentAnswer;
+    }
+    public void setCurrentAnswer(int currentAnswer) {
+        this.currentAnswer = currentAnswer;
     }
 
 }
