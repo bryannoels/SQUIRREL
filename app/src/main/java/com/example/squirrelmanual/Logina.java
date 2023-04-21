@@ -47,7 +47,7 @@ public class Logina extends AppCompatActivity  {
 
         @Override
         protected String doInBackground(Void... params) {
-            String urlString = "http://192.168.10.133:9999/backend/getUser?phone_number="+phoneNumber;
+            String urlString = SQUIRREL.baseURL+"/getUser?phone_number="+phoneNumber;
             System.out.println(urlString);
             String result = null;
             try {

@@ -8,6 +8,8 @@ public class SQUIRREL extends Application {
     private String phone = "81234567";
     private String password = "password";
     private int studentId = 1;
+    private int moduleId = 1;
+    public static String baseURL = "http://192.168.10.137:9999/backend";
 
     public String getName() {
         return name;
@@ -42,6 +44,13 @@ public class SQUIRREL extends Application {
     }
     public void setStudentId(int studentId) {
         this.studentId = studentId;
+    }
+
+    public int getModuleId() {
+        return moduleId;
+    }
+    public void setModuleId(int moduleId) {
+        this.moduleId = moduleId;
     }
 
 }

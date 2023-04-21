@@ -26,6 +26,7 @@ import android.os.AsyncTask;
 public class MainActivity extends AppCompatActivity {
 
     private JSONArray moduleList;
+    private JSONArray currentProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,14 +35,16 @@ public class MainActivity extends AppCompatActivity {
 
         SQUIRREL myApp = (SQUIRREL) getApplicationContext();
         String name = myApp.getName();
+        int studentId = myApp.getStudentId();
         TextView textView = findViewById(R.id.textView);
         textView.setText("Hi, "+name+"!");
 
         // call the AsyncTask to fetch API
         new GetModuleList().execute();
 
-        ProgressBar progressBar = findViewById(R.id.progressBar3);
-        progressBar.setProgress(30, true);
+        new GetResultForHomePage(studentId,1).execute();
+        new GetResultForHomePage(studentId,2).execute();
+        new GetResultForHomePage(studentId,3).execute();
 
         ImageView firstButton = findViewById(R.id.imageView10);
         ImageView secondButton = findViewById(R.id.imageView11);
@@ -87,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected String doInBackground(Void... params) {
-            String urlString = "http://192.168.10.133:9999/backend/getModuleList";
+            String urlString = SQUIRREL.baseURL+"/getModuleList";
             String result = null;
             try {
                 URL url = new URL(urlString);
@@ -146,6 +149,69 @@ public class MainActivity extends AppCompatActivity {
             } catch (JSONException e) {
                 Log.e("MainActivity", "Error ", e);
             }
+        }
+    }
+
+    private class GetResultForHomePage extends AsyncTask<Void, Void, String> {
+
+        private int studentId;
+        private int moduleId;
+
+        public GetResultForHomePage(int studentId, int moduleId) {
+            this.studentId = studentId;
+            this.moduleId = moduleId;
+        }
+        @Override
+        protected String doInBackground(Void... params) {
+            String urlString = SQUIRREL.baseURL+"/getResultForHomePage?student_id="+studentId+"&module_id="+moduleId;
+            String result = null;
+            try {
+                URL url = new URL(urlString);
+                HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+                urlConnection.setRequestMethod("GET");
+                urlConnection.setReadTimeout(10000 /* milliseconds */);
+                urlConnection.setConnectTimeout(15000 /* milliseconds */);
+                urlConnection.connect();
+                int responseCode = urlConnection.getResponseCode();
+                if (responseCode == HttpURLConnection.HTTP_OK) {
+                    BufferedReader in = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
+                    StringBuilder response = new StringBuilder();
+                    String line;
+                    while ((line = in.readLine()) != null) {
+                        response.append(line);
+                    }
+                    in.close();
+                    result = response.toString();
+                } else {
+                    result = "error";
+                }
+            } catch (IOException e) {
+                Log.e("MainActivity", "Error ", e);
+            }
+            return result;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            // convert JSON string to JSONArray
+            try {
+                currentProgress = new JSONArray(result);
+            } catch (JSONException e) {
+                Log.e("MainActivity", "Error ", e);
+            }
+            ProgressBar progressBar = findViewById(R.id.progressBar1);
+            if (this.moduleId == 2)
+                progressBar = findViewById(R.id.progressBar2);
+            else if (this.moduleId == 3)
+                progressBar = findViewById(R.id.progressBar3);
+
+            int progressVal;
+            try {
+                progressVal = currentProgress.getJSONObject(0).getInt("count")*100/9;
+            } catch (JSONException e) {
+                throw new RuntimeException(e);
+            }
+            progressBar.setProgress(progressVal, true);
         }
     }
 }
