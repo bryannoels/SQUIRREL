@@ -44,7 +44,7 @@ public class LearningPage extends AppCompatActivity  {
         new GetResultForLearningPage(studentId, moduleId, 2).execute();
         new GetResultForLearningPage(studentId, moduleId, 3).execute();
 
-        ImageView firstButton = findViewById(R.id.imageView5);
+        ImageView firstButton = findViewById(R.id.imageView4);
         firstButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +55,7 @@ public class LearningPage extends AppCompatActivity  {
                 startActivity(intent);
             }
         });
-        ImageView secondButton = findViewById(R.id.imageView18);
+        ImageView secondButton = findViewById(R.id.imageView14);
         secondButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,7 +66,7 @@ public class LearningPage extends AppCompatActivity  {
                 startActivity(intent);
             }
         });
-        ImageView thirdButton = findViewById(R.id.imageView19);
+        ImageView thirdButton = findViewById(R.id.imageView15);
         thirdButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

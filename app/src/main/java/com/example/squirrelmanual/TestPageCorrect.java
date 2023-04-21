@@ -55,6 +55,7 @@ public class TestPageCorrect extends AppCompatActivity  {
             correctButton = findViewById(R.id.buttonD);
         }
         correctButton.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#99CC29")));
+        correctButton.setTextColor(ColorStateList.valueOf(Color.parseColor("#FFFFFF")));
 
 
 

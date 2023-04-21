@@ -22,6 +22,8 @@ import java.util.Objects;
 
 public class Settings extends AppCompatActivity  {
 
+    private int type = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +55,20 @@ public class Settings extends AppCompatActivity  {
             myApp.setName(updatedName);
             myApp.setPhone(updatedPhoneNumber);
             myApp.setPassword(updatedPassword);
+            type = 1;
+            new UpdateUser(updatedAge, updatedName, updatedPhoneNumber, updatedPassword, studentId).execute();
+        });
+        Button logoutButton = findViewById(R.id.logoutButton);
+        logoutButton.setOnClickListener(v -> {
+            int updatedAge = Integer.parseInt(editAge.getText().toString());
+            String updatedName = editName.getText().toString();
+            String updatedPhoneNumber = editPhoneNumber.getText().toString();
+            String updatedPassword = editPassword.getText().toString();
+            myApp.setAge(updatedAge);
+            myApp.setName(updatedName);
+            myApp.setPhone(updatedPhoneNumber);
+            myApp.setPassword(updatedPassword);
+            type = 2;
             new UpdateUser(updatedAge, updatedName, updatedPhoneNumber, updatedPassword, studentId).execute();
         });
         TextView learnButton = findViewById(R.id.learnButton);
@@ -111,7 +127,11 @@ public class Settings extends AppCompatActivity  {
         @Override
         protected void onPostExecute(String result) {
             // convert JSON string to JSONArray
-            Intent intent = new Intent(Settings.this, MainActivity.class);
+            Intent intent;
+            if (type == 1)
+                intent = new Intent(Settings.this, MainActivity.class);
+            else
+                intent = new Intent(Settings.this, Login.class);
             startActivity(intent);
         }
     }

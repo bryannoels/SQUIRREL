@@ -71,7 +71,7 @@
             android:layout_height="81dp"
             android:background="@drawable/rect"
             android:text="Next"
-            android:textColor="#FFFFFF"
+            android:textColor="#FED2B3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/buttonB"
             app:layout_constraintHorizontal_bias="1.0"

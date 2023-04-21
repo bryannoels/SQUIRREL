@@ -68,6 +68,7 @@
             android:layout_height="53dp"
             android:layout_marginTop="400dp"
             android:hint="password"
+            android:inputType="textPassword"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:visibility="visible"
@@ -87,6 +88,19 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_constraintTop_toBottomOf="@id/textInputLayout2" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="289dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="68dp"
+            android:background="@drawable/rect"
+            android:text="LOGOUT"
+            android:textColor="#FED2B3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_constraintTop_toBottomOf="@id/textInputLayout2" />
 

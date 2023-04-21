@@ -50,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
         new GetResultForHomePage(studentId,2).execute();
         new GetResultForHomePage(studentId,3).execute();
 
-        ImageView firstButton = findViewById(R.id.imageView10);
-        ImageView secondButton = findViewById(R.id.imageView11);
-        ImageView thirdButton = findViewById(R.id.imageView12);
+        ImageView firstButton = findViewById(R.id.imageView7);
+        ImageView secondButton = findViewById(R.id.imageView8);
+        ImageView thirdButton = findViewById(R.id.imageView9);
         TextView profileButton = findViewById(R.id.profileButton);
         firstButton.setOnClickListener(new View.OnClickListener() {
             @Override
