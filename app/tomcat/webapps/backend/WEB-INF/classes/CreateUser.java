@@ -31,6 +31,21 @@ public class CreateUser extends HttpServlet {
         +request.getParameter("student_password")+"')";
          stmt.executeUpdate(sqlStr);
 
+         String sqlStr2 = "select student_id, student_name, phone_number, student_age, student_password from students where phone_number = " + "'" + request.getParameter("phone_number") + "'"; 
+         ResultSet rset2 = stmt.executeQuery(sqlStr2);
+
+         JSONArray jsonArr = new JSONArray();
+         while(rset2.next()) {
+            JSONObject jsonObj = new JSONObject();
+            jsonObj.put("student_id", rset2.getInt("student_id"));
+            jsonObj.put("student_name", rset2.getString("student_name"));
+            jsonObj.put("phone_number", rset2.getString("phone_number"));
+            jsonObj.put("student_age", rset2.getInt("student_age"));
+            jsonObj.put("student_password", rset2.getString("student_password"));
+            jsonArr.put(jsonObj);
+         }
+         out.print(jsonArr);
+
       } catch(Exception ex) {
          out.println("<p>Error: " + ex.getMessage() + "</p>");
          out.println("<p>Check Tomcat console for details.</p>");

@@ -34,6 +34,7 @@ public class TestPage extends AppCompatActivity  {
         int moduleId = myApp.getModuleId();
         int levelNumber = myApp.getLevelNumber();
         int questionNumber = myApp.getQuestionNumber();
+        int studentId = myApp.getStudentId();
         new GetQuestionText(moduleId, levelNumber, questionNumber).execute();
 
         SeekBar seek = findViewById(R.id.seekBar);
@@ -43,37 +44,34 @@ public class TestPage extends AppCompatActivity  {
         buttonA.setOnClickListener(v -> {
             Intent intent;
             if (answer == 1)
-                intent = new Intent(TestPage.this, TestPageCorrect.class);
+                new SubmitAnswer(studentId, questionId, 1).execute();
             else
-                intent = new Intent(TestPage.this, TestPageWrong.class);
-            startActivity(intent);
+                new SubmitAnswer(studentId, questionId, 0).execute();
+
         });
         Button buttonB = findViewById(R.id.buttonB);
         buttonB.setOnClickListener(v -> {
             Intent intent;
             if (answer == 2)
-                intent = new Intent(TestPage.this, TestPageCorrect.class);
+                new SubmitAnswer(studentId, questionId, 1).execute();
             else
-                intent = new Intent(TestPage.this, TestPageWrong.class);
-            startActivity(intent);
+                new SubmitAnswer(studentId, questionId, 0).execute();
         });
         Button buttonC = findViewById(R.id.buttonC);
         buttonC.setOnClickListener(v -> {
             Intent intent;
             if (answer == 3)
-                intent = new Intent(TestPage.this, TestPageCorrect.class);
+                new SubmitAnswer(studentId, questionId, 1).execute();
             else
-                intent = new Intent(TestPage.this, TestPageWrong.class);
-            startActivity(intent);
+                new SubmitAnswer(studentId, questionId, 0).execute();
         });
         Button buttonD = findViewById(R.id.buttonD);
         buttonD.setOnClickListener(v -> {
             Intent intent;
             if (answer == 4)
-                intent = new Intent(TestPage.this, TestPageCorrect.class);
+                new SubmitAnswer(studentId, questionId, 1).execute();
             else
-                intent = new Intent(TestPage.this, TestPageWrong.class);
-            startActivity(intent);
+                new SubmitAnswer(studentId, questionId, 0).execute();
         });
 
     }
@@ -202,6 +200,63 @@ public class TestPage extends AppCompatActivity  {
             } catch (JSONException e) {
                 throw new RuntimeException(e);
             }
+        }
+    }
+
+    private class SubmitAnswer extends AsyncTask<Void, Void, String> {
+
+
+        private int studentId;
+        private int questionId;
+        private int res;
+
+
+        public SubmitAnswer(int studentId, int questionId, int res) {
+            this.studentId = studentId;
+            this.questionId = questionId;
+            this.res = res;
+        }
+        @Override
+        protected String doInBackground(Void... params) {
+            String urlString = SQUIRREL.baseURL+"/submitAnswer?student_id="+studentId
+                    +"&question_id="+questionId+"&result="+res;
+            System.out.println("urlString = "+urlString);
+            String result = null;
+            try {
+                URL url = new URL(urlString);
+                HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+                urlConnection.setRequestMethod("GET");
+                urlConnection.setReadTimeout(10000 /* milliseconds */);
+                urlConnection.setConnectTimeout(15000 /* milliseconds */);
+                urlConnection.connect();
+                int responseCode = urlConnection.getResponseCode();
+                if (responseCode == HttpURLConnection.HTTP_OK) {
+                    BufferedReader in = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
+                    StringBuilder response = new StringBuilder();
+                    String line;
+                    while ((line = in.readLine()) != null) {
+                        response.append(line);
+                    }
+                    in.close();
+                    result = response.toString();
+                } else {
+                    result = "none";
+                }
+            } catch (IOException e) {
+                Log.e("MainActivity", "Error ", e);
+            }
+            return result;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            // convert JSON string to JSONArray
+            Intent intent;
+            if (this.res == 1)
+                intent = new Intent(TestPage.this, TestPageCorrect.class);
+            else
+                intent = new Intent(TestPage.this, TestPageWrong.class);
+            startActivity(intent);
         }
     }
 }

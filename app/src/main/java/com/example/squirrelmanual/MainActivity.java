@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         int studentId = myApp.getStudentId();
         TextView textView = findViewById(R.id.textView);
         textView.setText("Hi, "+name+"!");
+        System.out.println("student Id = "+studentId);
 
         // call the AsyncTask to fetch API
         new GetModuleList().execute();
