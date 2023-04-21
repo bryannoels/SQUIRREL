@@ -100,6 +100,8 @@ public class Logina extends AppCompatActivity  {
                             myApp.setName(userDetails.getJSONObject(0).getString("student_name"));
                             myApp.setAge(Integer.parseInt(userDetails.getJSONObject(0).getString("student_age")));
                             myApp.setStudentId(Integer.parseInt(userDetails.getJSONObject(0).getString("student_id")));
+                            myApp.setPassword(userDetails.getJSONObject(0).getString("student_password"));
+                            myApp.setName(userDetails.getJSONObject(0).getString("student_name"));
                         } catch (JSONException e) {
                             throw new RuntimeException(e);
                         }
