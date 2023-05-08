@@ -13,7 +13,7 @@ public class SQUIRREL extends Application {
     private int levelNumber = 1;
     private int questionNumber = 1;
     private int currentAnswer = 1;
-    public static String baseURL = "http://192.168.10.137:9999/backend";
+    public static String baseURL = "http://192.168.0.101:9999/backend";
 
     public String getName() {
         return name;
